@@ -1,7 +1,16 @@
 import React from 'react';
 import "../assets/css/SubCategories.css"
 
+import { useNavigate } from "react-router-dom";
+
+
+
 const SubCategories = () => {
+    const navigate = useNavigate();
+    const productinfo = () => { navigate("/productinfo") }
+
+
+
     return (
         <div style={{ width: '90%', margin:'auto', marginTop:'20px'}}>
 
@@ -76,7 +85,7 @@ const SubCategories = () => {
                         </div>
                     </div>
                     <div className="subcatrow">
-                        <div className="subcatcolumn">
+                        <div onClick={productinfo} className="subcatcolumn">
                             <img src="../public/Images/img.jpg" className="subcateimgscale" />
                             <h2 className="headingstyle">
                                 1st
@@ -101,7 +110,7 @@ const SubCategories = () => {
                                     ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
                             </div>
                         </div>
-                        <div className="subcatcolumn">
+                        <div onClick={productinfo} className="subcatcolumn">
                             <img src="../public/Images/img.jpg" className="subcateimgscale" />
                             <h2 className="headingstyle">
                                 1st
@@ -126,84 +135,7 @@ const SubCategories = () => {
                                     ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
                             </div>
                         </div>
-                        <div className="subcatcolumn">
-                            <img src="../public/Images/img.jpg" className="subcateimgscale" />
-                            <h2 className="headingstyle">
-                                1st
-                                categories in
-                                this sub categories</h2>
-                            <div className="subcatdetails">
-                                <div className="rate">
-                                    <input type="radio" id="star5" name="rate" defaultValue={5} />
-                                    <label htmlFor="star5" title="text">5 stars</label>
-                                    <input type="radio" id="star4" name="rate" defaultValue={4} />
-                                    <label htmlFor="star4" title="text">4 stars</label>
-                                    <input type="radio" id="star3" name="rate" defaultValue={3} />
-                                    <label htmlFor="star3" title="text">3 stars</label>
-                                    <input type="radio" id="star2" name="rate" defaultValue={2} />
-                                    <label htmlFor="star2" title="text">2 stars</label>
-                                    <input type="radio" id="star1" name="rate" defaultValue={1} />
-                                    <label htmlFor="star1" title="text">1 star</label>
-                                </div>
-                                <p style={{ marginLeft: '-3px' }}>(4.3) 223</p>
-                                <button className="dealoftheday">Deal of the day</button>
-                                <nobr style={{ fontSize: '20px', fontWeight: '500px', marginLeft: '20px' }}>
-                                    ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="subcatrow">
-                        <div className="subcatcolumn">
-                            <img src="../public/Images/img.jpg" className="subcateimgscale" />
-                            <h2 className="headingstyle">
-                                1st
-                                categories in
-                                this sub categories</h2>
-                            <div className="subcatdetails">
-                                <div className="rate">
-                                    <input type="radio" id="star5" name="rate" defaultValue={5} />
-                                    <label htmlFor="star5" title="text">5 stars</label>
-                                    <input type="radio" id="star4" name="rate" defaultValue={4} />
-                                    <label htmlFor="star4" title="text">4 stars</label>
-                                    <input type="radio" id="star3" name="rate" defaultValue={3} />
-                                    <label htmlFor="star3" title="text">3 stars</label>
-                                    <input type="radio" id="star2" name="rate" defaultValue={2} />
-                                    <label htmlFor="star2" title="text">2 stars</label>
-                                    <input type="radio" id="star1" name="rate" defaultValue={1} />
-                                    <label htmlFor="star1" title="text">1 star</label>
-                                </div>
-                                <p style={{ marginLeft: '-3px' }}>(4.3) 223</p>
-                                <button className="dealoftheday">Deal of the day</button>
-                                <nobr style={{ fontSize: '20px', fontWeight: '500px', marginLeft: '20px' }}>
-                                    ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
-                            </div>
-                        </div>
-                        <div className="subcatcolumn">
-                            <img src="../public/Images/img.jpg" className="subcateimgscale" />
-                            <h2 className="headingstyle">
-                                1st
-                                categories in
-                                this sub categories</h2>
-                            <div className="subcatdetails">
-                                <div className="rate">
-                                    <input type="radio" id="star5" name="rate" defaultValue={5} />
-                                    <label htmlFor="star5" title="text">5 stars</label>
-                                    <input type="radio" id="star4" name="rate" defaultValue={4} />
-                                    <label htmlFor="star4" title="text">4 stars</label>
-                                    <input type="radio" id="star3" name="rate" defaultValue={3} />
-                                    <label htmlFor="star3" title="text">3 stars</label>
-                                    <input type="radio" id="star2" name="rate" defaultValue={2} />
-                                    <label htmlFor="star2" title="text">2 stars</label>
-                                    <input type="radio" id="star1" name="rate" defaultValue={1} />
-                                    <label htmlFor="star1" title="text">1 star</label>
-                                </div>
-                                <p style={{ marginLeft: '-3px' }}>(4.3) 223</p>
-                                <button className="dealoftheday">Deal of the day</button>
-                                <nobr style={{ fontSize: '20px', fontWeight: '500px', marginLeft: '20px' }}>
-                                    ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
-                            </div>
-                        </div>
-                        <div className="subcatcolumn">
+                        <div onClick={productinfo} className="subcatcolumn">
                             <img src="../public/Images/img.jpg" className="subcateimgscale" />
                             <h2 className="headingstyle">
                                 1st
@@ -230,7 +162,7 @@ const SubCategories = () => {
                         </div>
                     </div>
                     <div className="subcatrow">
-                        <div className="subcatcolumn">
+                        <div onClick={productinfo} className="subcatcolumn">
                             <img src="../public/Images/img.jpg" className="subcateimgscale" />
                             <h2 className="headingstyle">
                                 1st
@@ -255,7 +187,7 @@ const SubCategories = () => {
                                     ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
                             </div>
                         </div>
-                        <div className="subcatcolumn">
+                        <div onClick={productinfo} className="subcatcolumn">
                             <img src="../public/Images/img.jpg" className="subcateimgscale" />
                             <h2 className="headingstyle">
                                 1st
@@ -280,7 +212,84 @@ const SubCategories = () => {
                                     ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
                             </div>
                         </div>
-                        <div className="subcatcolumn">
+                        <div onClick={productinfo} className="subcatcolumn">
+                            <img src="../public/Images/img.jpg" className="subcateimgscale" />
+                            <h2 className="headingstyle">
+                                1st
+                                categories in
+                                this sub categories</h2>
+                            <div className="subcatdetails">
+                                <div className="rate">
+                                    <input type="radio" id="star5" name="rate" defaultValue={5} />
+                                    <label htmlFor="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" defaultValue={4} />
+                                    <label htmlFor="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" defaultValue={3} />
+                                    <label htmlFor="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" defaultValue={2} />
+                                    <label htmlFor="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" defaultValue={1} />
+                                    <label htmlFor="star1" title="text">1 star</label>
+                                </div>
+                                <p style={{ marginLeft: '-3px' }}>(4.3) 223</p>
+                                <button className="dealoftheday">Deal of the day</button>
+                                <nobr style={{ fontSize: '20px', fontWeight: '500px', marginLeft: '20px' }}>
+                                    ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="subcatrow">
+                        <div onClick={productinfo} className="subcatcolumn">
+                            <img src="../public/Images/img.jpg" className="subcateimgscale" />
+                            <h2 className="headingstyle">
+                                1st
+                                categories in
+                                this sub categories</h2>
+                            <div className="subcatdetails">
+                                <div className="rate">
+                                    <input type="radio" id="star5" name="rate" defaultValue={5} />
+                                    <label htmlFor="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" defaultValue={4} />
+                                    <label htmlFor="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" defaultValue={3} />
+                                    <label htmlFor="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" defaultValue={2} />
+                                    <label htmlFor="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" defaultValue={1} />
+                                    <label htmlFor="star1" title="text">1 star</label>
+                                </div>
+                                <p style={{ marginLeft: '-3px' }}>(4.3) 223</p>
+                                <button className="dealoftheday">Deal of the day</button>
+                                <nobr style={{ fontSize: '20px', fontWeight: '500px', marginLeft: '20px' }}>
+                                    ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
+                            </div>
+                        </div>
+                        <div onClick={productinfo} className="subcatcolumn">
+                            <img src="../public/Images/img.jpg" className="subcateimgscale" />
+                            <h2 className="headingstyle">
+                                1st
+                                categories in
+                                this sub categories</h2>
+                            <div className="subcatdetails">
+                                <div className="rate">
+                                    <input type="radio" id="star5" name="rate" defaultValue={5} />
+                                    <label htmlFor="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" defaultValue={4} />
+                                    <label htmlFor="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" defaultValue={3} />
+                                    <label htmlFor="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" defaultValue={2} />
+                                    <label htmlFor="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" defaultValue={1} />
+                                    <label htmlFor="star1" title="text">1 star</label>
+                                </div>
+                                <p style={{ marginLeft: '-3px' }}>(4.3) 223</p>
+                                <button className="dealoftheday">Deal of the day</button>
+                                <nobr style={{ fontSize: '20px', fontWeight: '500px', marginLeft: '20px' }}>
+                                    ₹552 <s style={{ fontSize: '12px', color: '#696e72' }}> ₹999</s>&nbsp;<span style={{ fontSize: '12px', color: '#696e72' }}>(48% off)</span></nobr>
+                            </div>
+                        </div>
+                        <div onClick={productinfo} className="subcatcolumn">
                             <img src="../public/Images/img.jpg" className="subcateimgscale" />
                             <h2 className="headingstyle">
                                 1st
