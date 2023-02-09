@@ -1,0 +1,123 @@
+.checked {
+    color: orange;
+}
+
+
+.marcheck {
+    margin-left: 30%;
+    margin-top: 5px;
+}
+
+
+.reviews {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: #8190a5;
+}
+
+
+.testimonial {
+    display: flex;
+    width: auto;
+    height: 300px;
+    background-color: #ffffff;
+    border: 2px solid rgb(27, 26, 26);
+    padding: 20px;
+    margin-top: 0px;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+
+blockquote {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+}
+
+.blockquote-footer {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+.reviewimg {
+    width: 75px;
+    height: 75px;
+    margin-left: 35%;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.prevReview,
+.nextReview {
+    position:fixed;
+    cursor: pointer;
+    position: absolute;
+    top: 2900px;
+    width: auto;
+    padding: 16px;
+    
+    color: rgb(77, 50, 50);
+    background-color: rgba(255, 255, 255, 0.863);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease;
+
+    user-select: none;
+}
+
+.prevReview {
+    left: 0px;
+}
+
+.nextReview {
+    right: 0px;
+
+}
+
+.semi-circle-prev {
+    border-radius: 0px 170px 170px 0;
+}
+
+.semi-circle-next {
+    border-radius: 0px 170px 170px 0;
+    transform: rotate(180deg);
+}
+
+.prevReview:hover,
+.nextReview:hover {
+    background-color: rgba(15, 15, 15, 0.788);
+}
+
+@media only screen and (max-width: 300px) {
+
+    .prevReview,
+    .nextReview,
+    .text {
+        font-size: 14px
+    }
+}
+
+
+
+
+.reviewp {
+    width: 300px;
+    height: 90px;
+    overflow: auto;
+}

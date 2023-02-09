@@ -1,0 +1,11 @@
+.circles {
+    width: 1500px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin: 10px;
+}
+
+.circlesdiv {
+    margin: 50px 10px 0px 10px
+}

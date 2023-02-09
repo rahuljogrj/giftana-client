@@ -1,0 +1,179 @@
+
+
+
+.subcatrow {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.subcatcolumn {
+    float: left;
+    width: 250px;
+    padding: 10px;
+    height: 400px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+    margin-right: 40px;
+
+}
+
+.subcatrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.scroll1 {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.subcateimgscale {
+    width: 240px;
+    height: 240px;
+    margin-top: -5px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
+
+.subcatdetails {
+    margin-left: 5px;
+    border-left: 0.5px solid grey
+}
+
+.headingstyle {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+.rate {
+    float: left;
+    height: 30px;
+    padding: 0px 10px;
+    margin-top: -5px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 25px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+
+
+.dealoftheday {
+    background-color: rgb(199, 0, 0);
+    color: white;
+    font-size: 12px;
+    border: none;
+    padding: 7px;
+    margin-left: 10px;
+}
+
+
+.showresults {
+    margin-bottom: 25px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.vaccumbutton {
+    background-color: rgb(62, 194, 247);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white
+}
+
+
+.topbox {
+    width: 90%;
+    height: 100px;
+    margin:auto;
+    margin-top: 25px;    
+}
+
+
+
+.centered { 
+    position:relative;
+    top:-50px;
+    margin-left:58%;
+    transform: translate(-50%, -50%);
+}
+
+
+ul.breadcrumb {
+    list-style: none;
+  
+}
+
+
+.breadcrumb a{
+    font-size: 15px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    
+}
+
+ul.breadcrumb li+li:before {
+    content: ">\00a0";
+}
+
+ul.breadcrumb li a:hover {
+    color: #ce0a0a;
+
+}
