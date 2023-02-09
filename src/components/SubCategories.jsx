@@ -15,7 +15,7 @@ const SubCategories = () => {
         <div style={{ width: '90%', margin:'auto', marginTop:'20px'}}>
 
             <div className="topbox">
-                <img src="../public/Images/grayimage.jpg" style={{ height: '100px', opacity: '40%' }} />
+                <img src="../public/Images/grayimage.jpg" style={{width:'100%', height: '100px', opacity: '80%' }} />
                 <div className="centered">
                     <button className="vaccumbutton">Hot
                         &amp; Cold Vacuum

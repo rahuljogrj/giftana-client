@@ -17,6 +17,7 @@ import SecondBanner from './components/SecondBanner';
 import ThirdBanner from './components/ThirdBanner';
 import SubCategories from './components/SubCategories';
 import ProductInfo from './components/ProductInfo';
+import Navbar1 from './components/Navbar1';
 
 
 
@@ -62,10 +63,10 @@ function App() {
           </Route>
 
 
-          <Route path="/categories" element={<><NavbarSlider />
+          <Route path="/categories" element={<><Navbar1 />
             <Categories /></>}> </Route>
 
-          <Route path="/subcategories" element={<><NavbarSlider />
+          <Route path="/subcategories" element={<><Navbar1 />
             <SubCategories /></>}> </Route>
             
           <Route path="/productinfo" element={<><ProductInfo /></>}> </Route>

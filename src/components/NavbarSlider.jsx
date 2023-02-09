@@ -74,7 +74,7 @@ const NavbarSlider = () => {
                                     <div class="ml-4 flex lg:ml-0" style={{ marginLeft: '150px' }}>
                                         <a href="#">
                                             <span class="sr-only">Your Company</span>
-                                            <img class="h-8 w-auto" src="https://www.giftana.com/images/Giftana.com%20Logo%20(Black).png" alt="" style={{ width: '220px', height: 'auto' }} />
+                                            <img src="https://www.giftana.com/images/Giftana.com%20Logo%20(Black).png" alt="" style={{ width: '220px', height: 'auto', marginTop: '-15px' }} />
 
                                         </a>
                                     </div>
@@ -269,9 +269,10 @@ const NavbarSlider = () => {
                                 </div>
                             </div>
 
+                        </div>
 
 
-                            {/* <div class="slideshow-container">
+                        {/* <div class="slideshow-container">
 
                                     <div class="mySlides fade">
 
@@ -293,7 +294,6 @@ const NavbarSlider = () => {
 
                                 </div> */}
 
-                        </div>
                     </div>
 
                 </header>
